@@ -5,9 +5,14 @@
   </head>
 
 <body>
-    <?php  include ('layouts/body.php')?>
+  
+
+ 	 	 <?php include('layouts/nav.php');?>
+ 	
+    <div>
+    	<?php include('product_load.php');?>
+    </div>
+    
 </body>
-<footer>
-    <?php include('layouts/footer.php'); ?>
-</footer>
+
 </html>

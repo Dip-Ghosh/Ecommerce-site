@@ -46,7 +46,7 @@ if(isset($_POST['login']))
 	}
 	else
 	{
-		header("Location:login_form.php");
+		header("Location:index.php");
 	}
 }
 
