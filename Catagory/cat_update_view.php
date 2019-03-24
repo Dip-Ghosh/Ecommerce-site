@@ -21,18 +21,16 @@
 
 					<div class="form-group">
 						<label for="exampleInputName">Name</label>
-						<input type="text" name = "name" class="form-control" id="exampleInputname" aria-describedby="nameHelp" value="<?php echo $_GET['name'] ?>" required>
+						<input type="text" name = "name" class="form-control" id="exampleInputname" aria-describedby="nameHelp" value=" <?php echo $_GET['name']; ?>" required>
 
 					</div>
 
 					<div class="form-group">
-						<label for="exampleFormControlTextarea1">Description</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" 	
-						value="<?php echo $_GET['description'] ?>" ></textarea>
-					</div>
-					
-					
-					<button type="submit" name = "update" class="btn btn-primary">Update</button>
+						<label for="exampleInputName">Description</label>
+						<input type="text" name = "description" class="form-control" id="exampleInputname" aria-describedby="nameHelp" value=" <?php echo $_GET['description']; ?>" required>
+						</div>
+			
+					<button type="submit" name = "up" class="btn btn-primary">Update</button>
 				</form>
 			</div>
 

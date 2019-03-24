@@ -1,6 +1,4 @@
-<?
-print_r($_GET);
-?>
+
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -31,7 +29,7 @@ print_r($_GET);
                        placeholder="Enter product Name" required>
 
             </div>
-            
+
             <div class="form-group">
                 <label for="exampleInputName">Price</label>
                 <input type="price" name = "price" class="form-control" id="exampleInputname" aria-describedby="nameHelp"
@@ -44,13 +42,13 @@ print_r($_GET);
                        placeholder="Enter amount of Stock" required>
 
             </div>
-           
+
               <div class="form-group">
                 <label for="exampleInputName">file UpLoad</label>
                 <input type="file" name ="image">
 
             </div>
-           
+
             <div class="form-group">
                 <label for="exampleInputName">Created Date</label>
                 <input type="date" name = "created_date" class="form-control" id="exampleInputname" aria-describedby="nameHelp"
@@ -60,7 +58,7 @@ print_r($_GET);
             <div class="form-group">
             	<button type="submit" name ="add" class="btn btn-primary">ADD</button>
             </div>
-            
+
         </form>
     </div>
 

@@ -1,5 +1,5 @@
-<?php 
-include ("../database/connection.php");
+<?php
+include("../database/connection.php");
 ?>
 <html>
 	<head>
@@ -8,6 +8,7 @@ include ("../database/connection.php");
 
 	</head>
 	<body>
+
 		<div class="container">
 			<div> <h5 align="center"> User Information || <a href="../signUp_form.php".php>Add Users</a></h5></div>
 			<div class="col-md-12">
@@ -24,13 +25,10 @@ include ("../database/connection.php");
 						</tr>
 					</thead>
 					<tbody>
-						<?php 
-
-						$data ="SELECT * FROM login";
-						$show =mysqli_query($conn,$data);
-						while($row = mysqli_fetch_assoc($show))
-						{
-						?>
+						<?php
+                        include("../database/admin_view_query.php");
+                        while ($row = mysqli_fetch_assoc($show)) {
+                            ?>
 						<tr align = "center">
 							<td><?php  echo $row['id']?></td>
 							<td><?php  echo $row['name']?></td>
@@ -38,13 +36,12 @@ include ("../database/connection.php");
 							<td><?php  echo $row['password']?></td>
 							<td><?php  echo $row['user_role']?></td>
 							<td><a href="admin_delete.php?id=<?php echo $row['id'] ?>">Delete</a></td>
-							<?php 
-							echo '<td><a href="admin_update_view.php?id=' . $row['id'] ."&name=" .$row['name'] ."&email=" .$row['email']. "&user_role=" . $row['user_role'].'">Edit</a></td>';
-							?>
+							<?php
+                            echo '<td><a href="admin_update_view.php?id=' . $row['id'] ."&name=" .$row['name'] ."&email=" .$row['email']. "&user_role=" . $row['user_role'].'">Edit</a></td>'; ?>
 						</tr>
 						<?php
-						}
-						?>
+                        }
+                        ?>
 					</tbody>
 				</table>
 			</div>

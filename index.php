@@ -5,14 +5,12 @@
   </head>
 
 <body>
-  
 
- 	 	 <?php include('layouts/nav.php');?>
+<?php include('layouts/nav.php');?>
  	
     <div>
-    	<?php include('product_load.php');?>
+    	<?php include('layouts/product_load.php');?>
     </div>
-    
-</body>
 
+</body>
 </html>

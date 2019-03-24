@@ -23,14 +23,13 @@
 
             </div>
 
-            <div class="form-group">
-						<label for="exampleFormControldescription">Description</label>
-						<textarea type ="text" class="form-control" name ="description" placeholder="Enter description"></textarea>
-					</div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
+            
+					<div class="form-group">
+						<label for="exampleInputName">Description</label>
+						<input type="text" name = "description" class="form-control" id="exampleInputname" 
+                        aria-describedby="nameHelp"  placeholder="Enter Descriptions" required>
+						</div>
+            
             <button type="submit" name ="add" class="btn btn-primary">ADD</button>
         </form>
     </div>

@@ -12,7 +12,7 @@ if(!$user_registration)
 else
 {
 	echo "You have successfully Registered !" ;
-	//header("Location:index.php");
+	header("Location:../index.php");
 }
 
 

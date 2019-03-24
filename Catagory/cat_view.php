@@ -1,4 +1,4 @@
-<?php 
+<?php
 include ("../database/connection.php");
 ?>
 <html>
@@ -22,10 +22,9 @@ include ("../database/connection.php");
 						</tr>
 					</thead>
 					<tbody>
-						<?php 
+						<?php
 
-						$data ="SELECT * FROM catagory`";
-						$show =mysqli_query($conn,$data);
+						include ("../database/cat_view_Query.php");
 						while($row = mysqli_fetch_assoc($show))
 						{
 						?>
@@ -34,7 +33,7 @@ include ("../database/connection.php");
 							<td><?php  echo $row['name']?></td>
 							<td><?php  echo $row['description']?></td>
 							<td><a href="cat_delete.php?cat_id=<?php echo $row['cat_id'] ?>">Delete</a></td>
-							<?php 
+							<?php
 							echo '<td><a href="cat_update_view.php?cat_id=' . $row['cat_id'] ."&name=" .$row['name'] ."&description=" .$row['description']. '">Edit</a></td>';
 							?>
 						</tr>
